@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+<h2 class ="mb-4 text-center">Welcome to student feedback portal</h2>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg>
+            <img src="C:\Users\siree\Downloads\clg.jpeg" class="card-img-top" alt="College Image">
+            <div class="card-body">
+                <h5 class="card-title">Sri vasavi college of engineering</h5>
+                <p class="card-text">sri vasavi college of engineering is a 
+                    premier institution dedicated to providing quality education and fostering innovation 
+                    in the field of engineering.</p>
+                    <ul class="list-group list-group-flush mb-3">
+                    <li class ="list-group-item">📌deren Infrastructure</li>
+                    <li class="list-group-item">📌perienced Faculty</li>
+                    <li class="list-group-item">📌ate-of-the-art Laboratories</li>
+                    <li class="list-group-item">📌dustry Collaborations</li>
+                    <li class ="list-group-item">📌udent-Centric Approach</li>
+                    <li class ="list-group-item">📌tracurricular Activities</li>
+                    <li class="list-group-item">📌placements</li>
+                    </ul>
+                    <a href="/feedback" class="btn btn-primary">Visit feedback</a>
+                    <a href="/admin" class="btn btn-secondary">Admin panel</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

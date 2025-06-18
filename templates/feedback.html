@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <h1>Feedback form</h1>
+    <form method ="POST" >
+        <div class ="mb-3">
+            <label>Name:</label>
+            <input type="text" name="name" class="form-control" required>
+        </div>
+        <div class ="mb-3">
+            <label>Email:</label>
+            <input type="email" name="mail" class="form-control" required>
+        </div>
+        <div class ="mb-3">
+            <label>comments:</label>
+            <textarea name="comment" class="form-control" rows="5" required></textarea>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+    {% endblock %}
+</body>
+</html>
